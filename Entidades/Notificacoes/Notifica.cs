@@ -16,11 +16,14 @@ namespace Entidades.Notificacoes
 
         [NotMapped]
         public string NomePropriedade { get; set; }
+
         [NotMapped]
         public string Mensagem { get; set; }
+
         [NotMapped]
         public List<Notifica> Notificacoes { get; set; }
-        public bool ValidaPropriedades(string valor, string nomePropriedade)
+
+        public bool ValidaPropriedadeSting(string valor, string nomePropriedade)
         {
             if (string.IsNullOrWhiteSpace(valor) || string.IsNullOrWhiteSpace(nomePropriedade))
             {
