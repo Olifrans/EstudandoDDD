@@ -1,10 +1,11 @@
-﻿using Entidades.Entidades;
+﻿using Aplicacao.Interfaces.Genericos;
+using Entidades.Entidades;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Dominio.Interfaces.InterfaceServicos
+namespace Aplicacao.Interfaces
 {
-    public interface IServicoNoticia
+    public interface IAplicacaoNoticia : IGenericaAplicacao<Noticia>
     {
         Task AdcionaNoticia(Noticia noticia);
 

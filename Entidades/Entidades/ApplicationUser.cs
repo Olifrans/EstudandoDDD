@@ -1,11 +1,6 @@
 ﻿using Entidades.Enums;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades.Entidades
 {
@@ -15,7 +10,7 @@ namespace Entidades.Entidades
         public int Idade { get; set; }
 
         [Column("USR_CELULAR")]
-        public int Celular { get; set; }
+        public string Celular { get; set; }
 
         public TipoUsuario? Tipo { get; set; }
 

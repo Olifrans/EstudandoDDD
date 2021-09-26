@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Dominio.Interfaces.Genericos
+namespace Aplicacao.Interfaces.Genericos
 {
-    public interface IGenericos<T> where T : class
+    public interface IGenericaAplicacao<T> where T : class
     {
         Task Adcionar(T objeto);
 
@@ -14,6 +14,5 @@ namespace Dominio.Interfaces.Genericos
         Task<T> BucarPorId(int Id);
 
         Task<List<T>> Listar();
-        
     }
 }
