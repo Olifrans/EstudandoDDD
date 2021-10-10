@@ -15,8 +15,13 @@ namespace Aplicacao.Aplicacoes
 
         public async Task<bool> AdicionarUsuario(string email, string senha, int idade, string celular)
         {
-            return true;
-            //return await _IUsuario.AdicionaUsuario(email, senha, idade, celular);
+            return await _IUsuario.AdicionarUsuario(email, senha, idade, celular);
+        }
+
+        public async Task<bool> ExisteUsuario(string email, string senha)
+        {
+            return await _IUsuario.ExisteUsuario(email, senha);
+
         }
     }
 }
